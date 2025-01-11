@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire State Cfw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="banner_empire.gif">
+</head>
+<body>
+    <header>
+        <h1>Empire State Cfw Support</h1>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#support">الدعم الفني</a>
+        <a href="#rtteam">الرقابة</a>
+        <a href="#bandteam">الباند</a>
+        <a href="#rules">القوانين</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>مرحبًا بكم في Empire State Cfw</h2>
+        <img src="banner_empire.gif" alt="">
+    </div>
+
+    <div id="rules" class="container">
+        <h2>القوانين</h2>
+        <ul>
+            <li>كن محترمًا تجاه الآخرين.</li>
+            <li>لا ترسل رسائل مزعجة أو محتوى غير لائق.</li>
+            <li>اتبع إرشادات مجتمع Discord.</li>
+        </ul>
+    </div>
+
+    <div id="support" class="container">
+        <h2>الدعم الفني</h2>
+        <textarea id="supportMessage" placeholder="اكتب مشكلتك هنا..."></textarea>
+        <input type="file" id="supportFile">
+        <br>
+        <button onclick="sendToDiscord('support')">إرسال</button>
+    </div>
+
+    <div id="rtteam" class="container">
+        <h2>الرقابة</h2>
+        <textarea id="rtTeamMessage" placeholder="اكتب رسالتك لفريق الرقابة هنا..."></textarea>
+        <input type="file" id="rtTeamFile">
+        <br>
+        <button onclick="sendToDiscord('rtteam')">إرسال</button>
+    </div>
+
+    <div id="bandteam" class="container">
+        <h2>الباند</h2>
+        <textarea id="bandTeamMessage" placeholder="اكتب رسالتك لفريق الباند هنا..."></textarea>
+        <input type="file" id="bandTeamFile">
+        <br>
+        <button onclick="sendToDiscord('bandteam')">إرسال</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
